@@ -85,7 +85,7 @@ export default {
             <div class="mb-3">
                 <label for="email" class="form-label">Indirizzo mail:</label>
                 <input type="email" class="form-control" id="email" placeholder="name@example.com" name="email"
-                    v-model="form.email">
+                    v-model.trim="form.email">
             </div>
 
             <!-- Oggetto -->
@@ -97,7 +97,7 @@ export default {
             <!-- Testo -->
             <div class="mb-3">
                 <label for="text" class="form-label">Testo:</label>
-                <textarea class="form-control" id="text" rows="5" name="text" v-model="form.text"></textarea>
+                <textarea class="form-control" id="text" rows="5" name="text" v-model="form.message"></textarea>
             </div>
 
             <!-- Iscrizione news letter -->
